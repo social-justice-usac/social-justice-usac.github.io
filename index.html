@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="UCLA Social Justice Opportunities Search">
+    <meta name="author" content="USAConnect & Grow, Office of the Internal Vice President, USAC 2019">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="UCLA Social Justice Opportunities Search" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>UCLA Social Justice Opportunities Search</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+
+	<!-- Favicon  -->
+    <link rel="" href="">
+    <style>
+    .button {
+      display: inline-block;
+      padding: 10px 10px;
+      margin-bottom: 10px;
+      background: #FFFFFF;
+      border: none;
+      /* background-image: linear-gradient( to bottom, hsla(0, 0%, 0%, 0), hsla(0, 0%, 0%, 0.2) ); */
+      color: #5F4DEF;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+      font-weight: bold;
+      text-shadow: 0 1px white;
+      border-radius: 1%;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #5F4DEF;
+      text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+      color: #FFFFFF;
+    }
+
+    .button:active,
+    .button.is-checked {
+      background-color: #5F4DEF;
+    }
+
+    .button.is-checked {
+      color: white;
+      /* text-shadow: 0 -1px hsla(0, 0%, 0%, 0.8); */
+    }
+
+    .button:active {
+      /* box-shadow: inset 0 1px 10px hsla(0, 0%, 0%, 0.8); */
+    }
+
+    /* ---- button-group ---- */
+
+    .button-group:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .button-group .button {
+      float: left;
+      border-radius: 0%;
+      margin-left: 0;
+      margin-right: 1px;
+    }
+
+    .button-group .button:first-child { border-radius: 0.5em 0 0 0.5em; }
+    .button-group .button:last-child { border-radius: 0 0.5em 0.5em 0; }
+
+    /* ---- isotope ---- */
+
+    .grid {
+      border: 0px solid #333;
+    }
+
+    /* clear fix */
+    .grid:after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    /* ---- .element-item ---- */
+
+    .element-item {
+      /* position: relative;
+      float: left;
+      width: 100px;
+      height: 100px;
+      margin: 5px;
+      padding: 10px;
+      background: #888;
+      color: #262524; */
+    }
+
+    .element-item > * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .element-item .name {
+      position: absolute;
+
+      left: 10px;
+      top: 60px;
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    .element-item .symbol {
+      position: absolute;
+      left: 10px;
+      top: 0px;
+      font-size: 42px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .element-item .number {
+      position: absolute;
+      right: 8px;
+      top: 5px;
+    }
+
+    .element-item .weight {
+      position: absolute;
+      left: 10px;
+      top: 76px;
+      font-size: 12px;
+    }
+      .multiple_cards{
+
+      }
+
+      .card {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 1%;
+      margin: 0.3%;
+      /* box-shadow: 1px 1px 1px 1.5px rgba(0, 0, 0, 0.25); */
+      border-color: #5F4DEF;
+      border-width: medium;
+      border-radius: 30px;
+      font-family: 'Open Sans', sans-serif;
+
+      }
+
+      .TagContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        border-radius: 0px;
+        padding-left: 2%;
+      }
+
+      .ContentContainer{
+        display: flex;
+        flex-direction: row;
+        border-radius: 0px;
+        padding-left: 2%;
+      }
+
+      .ButtonContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        border-radius: 0px;
+        margin-bottom: 2%;
+      }
+
+      .heading {
+      padding: 2%;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 26px;
+      line-height: 30px;
+      color: #000000;
+      }
+
+      .greenbox{
+      width: 10px;
+      height: 22px;
+
+      background: #5F4DEF;
+      }
+
+      .greenbox_back{
+      width: 150px;
+      height: 22px;
+      margin-right: 2.5%;
+      background: #5F4DEF;
+      }
+
+      .greenbox_text{
+      margin-left: 2%;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      /* or 143% */
+
+      color: #39866F;
+      }
+
+      .redbox{
+      width: 10px;
+      height: 22px;
+
+      background: #B95555;
+      }
+
+      .redbox_back{
+      width: 150px;
+      height: 22px;
+      margin-right: 2.5%;
+      background: #EAEAEA;
+      }
+
+      .redbox_text{
+      margin-left: 2%;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+
+      color: #B95555;
+      }
+
+      .bluebox{
+      width: 1%;
+      height: ;
+      border-radius: 0px;
+      /* margin-bottom: 20px; */
+      background: #5F4DEF;
+      }
+
+      .bluebox_back{
+      width: 100%;
+      height: 100%;
+      margin-right: 2.5%;
+      background: #EAEAEA;
+      border-radius: 0px;
+      }
+
+      .bluebox_text{
+      margin-left: 2%;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 20px;
+      /* or 143% */
+
+      color: #5F4DEF;
+      }
+
+      .guide_button {
+      border: 2px solid #3B73A9;
+      width: 177px;
+      height: 33px;
+      box-sizing: border-box;
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+      background: white;
+      font-style: italic;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 30px;
+      color:#5F4DEF;
+      margin-right: 2.5%;
+      }
+
+      .guide_button:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+
+      .app_button {
+      border: 0px solid #5F4DEF;
+      width: 140px;
+      height: 40px;
+      box-sizing: border-box;
+      /* box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25); */
+      background: #5F4DEF;
+      font-weight: 500;
+      font-size: 18px;
+      font-family: 'Open Sans', sans-serif;
+      line-height: 30px;
+      color: #FFFFFF;
+      margin-right: 2.5%;
+      border-radius: 12px;
+      margin-bottom: 2.5%;
+      }
+
+      .app_button:hover {
+        /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
+        background: #FFFFFF;
+        color: #5F4DEF;
+      }
+
+      .textbox1{
+        margin-right: 7.5%;
+        margin-top: 2%;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .textbox2{
+        margin-right: 5%;
+        width: 140%;
+        margin-top: 2%;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .textbox{
+        margin-right: 5%;
+        margin-top: 2%;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+
+    #return-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: #3B73A9;
+        background: #3B73A9;
+        width: 50px;
+        height: 50px;
+        display: block;
+        text-decoration: none;
+        -webkit-border-radius: 35px;
+        -moz-border-radius: 35px;
+        border-radius: 35px;
+        display: none;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    #return-to-top i {
+        color: #fff;
+        margin: 0;
+        position: relative;
+        left: 16px;
+        top: 13px;
+        font-size: 19px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+    }
+    #return-to-top:hover {
+        background: #2e5982;
+    }
+    #return-to-top:hover i {
+        color: #fff;
+        top: 5px;
+    }
+    </style>
+
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <a class="navbar-brand logo-text page-scroll" href="#">social justice search</a>
+
+            <!-- Image Logo -->
+            <!-- <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-awesome fas fa-bars"></span>
+                <span class="navbar-toggler-awesome fas fa-times"></span>
+            </button>
+            <!-- end of mobile menu toggle button -->
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">FEATURES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#details">DETAILS</a>
+                    </li> -->
+
+                    <!-- Dropdown Menu -->
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle page-scroll" href="#video" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">VIDEO</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="article-details.html"><span class="item-text">ARTICLE DETAILS</span></a>
+                            <div class="dropdown-items-divide-hr"></div>
+                            <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                            <div class="dropdown-items-divide-hr"></div>
+                            <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
+                        </div>
+                    </li> -->
+                    <!-- end of dropdown menu -->
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#pricing">PRICING</a>
+                    </li> -->
+                </ul>
+                <!-- <span class="nav-item">
+                    <a class="btn-outline-sm" href="log-in.html">LOG IN</a>
+                </span> -->
+            </div>
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="header-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-xl-5">
+                        <div class="text-container">
+                            <h1>UCLA Social Justice Opportunities Search</h1>
+                            <p class="p-large">Discover opportunities to contribute toward social justice near UCLA based on your interests.
+                            <br> <br> Made with ♥ by <b>USAConnect</b> & <b>Grow </b>, USAC Office of the Internal Vice President 2019-20, <b>UCLA</b></p>
+                            <!-- <a class="btn-solid-lg page-scroll" href="sign-up.html">SIGN UP</a> -->
+                        </div> <!-- end of text-container -->
+                    </div> <!-- end of col -->
+                    <div class="col-lg-6 col-xl-7">
+                        <div class="image-container">
+                            <div class="img-wrapper">
+                                <img class="img-fluid" src="images/66140.jpg" alt="alternative">
+                            </div> <!-- end of img-wrapper -->
+                        </div> <!-- end of image-container -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of header-content -->
+    </header> <!-- end of header -->
+    <svg class="header-frame" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 310"><defs><style>.cls-1{fill:#5f4def;}</style></defs><title>header-frame</title><path class="cls-1" d="M0,283.054c22.75,12.98,53.1,15.2,70.635,14.808,92.115-2.077,238.3-79.9,354.895-79.938,59.97-.019,106.17,18.059,141.58,34,47.778,21.511,47.778,21.511,90,38.938,28.418,11.731,85.344,26.169,152.992,17.971,68.127-8.255,115.933-34.963,166.492-67.393,37.467-24.032,148.6-112.008,171.753-127.963,27.951-19.26,87.771-81.155,180.71-89.341,72.016-6.343,105.479,12.388,157.434,35.467,69.73,30.976,168.93,92.28,256.514,89.405,100.992-3.315,140.276-41.7,177-64.9V0.24H0V283.054Z"/></svg>
+    <!-- end of header -->
+
+
+
+    <!-- end of customers -->
+    <div id="details" class="basic-1">
+        <div class="container">
+    <div class="button-group filters-button-group">
+      <button class="button is-checked" data-filter="*">Show All</button>
+      <button class="button" data-filter=".Environment">Environment</button>
+      <button class="button" data-filter=".Education">Education</button>
+      <button class="button" data-filter=".Youth">Youth</button>
+      <button class="button" data-filter=".Legal">Legal</button>
+      <button class="button" data-filter=".Housing">Housing</button>
+      <button class="button" data-filter=".Workers">Workers</button>
+      <button class="button" data-filter=".Social_Justice">Social Justice</button>
+      <button class="button" data-filter=".Social_Services">Social Services</button>
+      <button class="button" data-filter=".Policy">Policy</button>
+      <button class="button" data-filter=".LGBTQ">LGBTQ+</button>
+      <button class="button" data-filter=".Health">Health</button>
+      <button class="button" data-filter=".Financial">Financial</button>
+      <button class="button" data-filter=".Animals">Animals</button>
+      <button class="button" data-filter=".Journalism">Journalism</button>
+
+    </div>
+
+    <div class="grid">
+      <div class="multiple_cards">
+        <div class="multiple_cards" id=yourContainerId>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- INSERT CORRECT FILE DIRECTORY FOR THE DATA BELOW -->
+    <script src="/Users/Avijit/Downloads/grow_web/grow_new.js"></script>
+        <script type="text/javascript">
+                 var html = '';
+                 $.each(data, function(key, value){
+                     html += '<div class="element-item card '+value.category+'" data-category="'+value.category+'">';
+                     html += '<div class="heading">'+value.org+'</div>';
+                     html += '<div class="TagContainer">';
+                     html += '<div class ="bluebox"></div>';
+                     html += '<div class ="bluebox_back">';
+                     html += '<div class ="bluebox_text">'+value.category+'</div>';
+                     html += '</div>';
+                     html += '</div>';
+                     html += '<div class="ContentContainer">';
+                     html += '<div class="textbox1">';
+                     html += '<div class="textbox2">';
+                     html += '<p><b>Contact</b><br/>'+value.contact+'</p>';
+                     html += '<p><b>Number </b><br/>'+value.cell+'</p>';
+                     html += '<p><b>Email </b><br/>'+value.email+'</p>';
+                     html += '</div>';
+                     html += '</div>';
+                     html += '<div class="textbox">';
+                     html += '<p><b>About </b><br/>'+value.description+'</p>';
+                     html += '<p><b>Organization Type: </b>'+value.orgtype+'</p>';
+                     html += '<p><b>Address: </b>'+value.address+'</p>';
+                     html += '<p><b>Type of Work: </b>'+value.worktype+'</p>';
+                     html += '<p><b>Opportunities: </b>'+value.help+'</p>';
+                     html += '</div>';
+                     html += '</div>';
+                     html += '<div class="ButtonContainer">';
+                     abc = "'"+value.website+"'"
+                     html += '<button class="app_button" onclick= "window.open('+abc+')";>View Website</button>';
+                     html += '</div>';
+                     html += '</div>';
+                 });
+          $('#yourContainerId').html(html);
+
+         </script>
+
+      </div>
+      </div>
+    </div>
+    </body>
+    <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> -->
+    <!-- Return to Top -->
+    <!-- <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a> -->
+    <script>
+
+    // // ===== Scroll to Top ====
+    // $(window).scroll(function() {
+    //     if ($(this).scrollTop() >= 20) {        // If page is scrolled more than 50px
+    //         $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    //     } else {
+    //         $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    //     }
+    // });
+    // $('#return-to-top').click(function() {      // When arrow is clicked
+    //     $('body,html').animate({
+    //         scrollTop : 0                       // Scroll to top of body
+    //     }, 500);
+    // });
+      // external js: isotope.pkgd.js
+
+    // init Isotope
+    var $grid = $('.grid').isotope({
+      itemSelector: '.element-item',
+      layoutMode: 'fitRows'
+    });
+    // filter functions
+    var filterFns = {
+    };
+    // bind filter button click
+    $('.filters-button-group').on( 'click', 'button', function() {
+      var filterValue = $( this ).attr('data-filter');
+      // use filterFn if matches value
+      filterValue = filterFns[ filterValue ] || filterValue;
+      $grid.isotope({ filter: filterValue });
+    });
+    // change is-checked class on buttons
+    $('.button-group').each( function( i, buttonGroup ) {
+      var $buttonGroup = $( buttonGroup );
+      $buttonGroup.on( 'click', 'button', function() {
+        $buttonGroup.find('.is-checked').removeClass('is-checked');
+        $( this ).addClass('is-checked');
+      });
+    });
+
+    </script>
+  </div>
+</div>
+
+    <!-- Footer -->
+    <svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 79"><defs><style>.cls-2{fill:#5f4def;}</style></defs><title>footer-frame</title><path class="cls-2" d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z" transform="translate(0 -0.188)"/></svg>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col first">
+                        <h4>USAConnect & Grow</h4>
+                        <p class="p-small">We're passionate about designing and developing solutions to improve student welfare and impact at UCLA.</p>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4></h4>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="white"></i>
+<STYLE>A {text-decoration: none;} </STYLE>
+                                <div class="media-body"><a class="white" href='https://www.freepik.com/vectors/people'> <b>Credit</b> People vector created by rawpixel.com - www.freepik.com</a></div>
+                            </li>
+                            <li class="media">
+                                <i class=""></i>
+                                <div class="media-body"><a class="white" href=""></a> <a class="white" href=""></a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Contact</h4>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="media-body">Office of the Internal Vice President,<BR> USAC, Los Angeles,<BR> California, US</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Template by Inovatik</a></p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
